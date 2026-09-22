@@ -1,0 +1,59 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+
+# IDEs / editors
+.idea/
+.vscode/
+*.iml
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+
+# Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Next.js / Vercel
+frontend/.vercel/
+
+# TypeScript
+frontend/*.tsbuildinfo
+frontend/next-env.d.ts
+
+# Test / coverage
+frontend/coverage/
+
+
+#Backend
+backend/target/
+
+# Maven wrapper downloaded files / temp
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# Spring / Java logs
+backend/*.log
+
+# Java compiled files
+backend/*.class
+
+# Package files
+backend/*.jar
+backend/*.war
+backend/*.ear
+
+# Spring local configuration
+backend/src/main/resources/application-local.properties
+backend/src/main/resources/application-local.yml
+backend/src/main/resources/application-local.yaml
+
+# Intellij
+/.idea/
+/backend/.idea/
