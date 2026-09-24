@@ -12,3 +12,13 @@ export async function getProducts(): Promise<Product[]> {
     return response.json()
 
 }
+
+export async function scrapeProducts(): Promise<void> {
+    const response = await fetch("http://localhost:8080/api/scrape", {
+        method: "POST",
+    })
+
+    if (!response.ok) {
+        throw new Error("Failed to start scraping")
+    }
+}

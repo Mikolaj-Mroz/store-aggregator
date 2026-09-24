@@ -1,5 +1,6 @@
 import { ProductCard } from "@/components/products/ProductCard"
 import { getProducts } from "@/lib/api/products"
+import {ScrapeButton} from "@/components/products/ScrapeButton";
 
 export default async function ProductsPage() {
     const products = await getProducts()
@@ -44,6 +45,8 @@ export default async function ProductsPage() {
                     <button className="rounded-full border border-black/10 bg-white px-4 py-2 text-sm text-[#4d574e] transition hover:bg-[#eceee8]">
                         Sale
                     </button>
+
+                    <div className="ml-auto"><ScrapeButton/></div>
                 </div>
 
                 {products.length > 0 ? (
